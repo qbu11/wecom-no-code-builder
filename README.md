@@ -38,20 +38,36 @@ Smart Sheets (智能表格), automation flows, message push, and dashboards.
 
 ## 安装
 
+**自动检测你用的 agent**（推荐）：
+
 ```bash
-npx skills add qbu11/wecom-no-code-builder -y -g
+npx skills add qbu11/wecom-no-code-builder
 ```
 
-或手动：
+**或指定 agent**——装了哪个用哪个：
 
 ```bash
-git clone https://github.com/qbu11/wecom-no-code-builder.git \
-  ~/.claude/skills/wecom-no-code-builder
+npx skills add qbu11/wecom-no-code-builder -g -a codex -y        # Codex
+npx skills add qbu11/wecom-no-code-builder -g -a zcode -y        # ZCode (Z.ai)
+npx skills add qbu11/wecom-no-code-builder -g -a claude-code -y  # Claude Code
+```
+
+> `skills` 支持约 80 个 agent（ZCode、Qoder、通义灵码、CodeBuddy、Kimi Code CLI、Zed…），
+> 完整列表见 [vercel-labs/skills](https://github.com/vercel-labs/skills#supported-agents)。
+> 不加 `-a` 时 CLI 会自动检测当前环境并交互式安装。
+
+**或手动 clone**：
+
+```bash
+git clone https://github.com/qbu11/wecom-no-code-builder.git <你的 agent 的 skills 目录>
 ```
 
 装好后，跟你的 agent 说：
 
 > 帮我用企业微信搭一套管售后工单的系统，我不想买软件，也不想找 IT。
+
+**这个 skill 不绑定任何特定 agent**——它只用对话，不需要命令行、脚本或 MCP 工具，
+所以在任何支持 Agent Skills 的环境里行为一致。
 
 ---
 
