@@ -9,21 +9,35 @@
 
 ## 官方能力型 skill 清单
 
-| skill | 装机量 | 能力 |
-|---|---|---|
-| `wecomteam/wecom-cli@wecomcli-doc` | 21.6K | 文档 |
-| `wecomteam/wecom-cli@wecomcli-todo` | 21.4K | **待办** |
-| `wecomteam/wecom-cli@wecomcli-contact` | 21.3K | 通讯录 |
-| `wecomteam/wecom-cli@wecomcli-meeting` | 21.3K | 会议 |
-| `wecomteam/wecom-cli@wecomcli-smartsheet` | 16.7K | **智能表格** |
-| `wecomteam/wecom-cli@wecomcli-msg` | 16.6K | 消息 |
-| `wecomteam/wecom-cli@wecomcli-schedule` | 16.4K | 日程 |
-| `wecomteam/wecom-unified@wecom-unified` | 11.6K | 上述全覆盖 |
-| `wecomteam/wecom-cli@wecomcli-sheet` | 8.2K | 普通表格 |
-| `wecomteam/wecom-cli@wecomcli-smartpage` | 8.2K | 智能页面 |
-| `wecomteam/wecom-cli@wecomcli-disk` | 4.9K | 微盘 |
+| skill | 用途 |
+|---|---|
+| `wecomcli-shared` | 公共前置检查：CLI 安装 / 版本 / 授权状态 |
+| `wecomcli-contact` | 通讯录：按姓名 / 拼音 / 别名搜人 |
+| `wecomcli-calendar` | 日程 |
+| `wecomcli-meeting` | 在线会议（含会议号、入会链接）+ 纪要转写 |
+| `wecomcli-todo` | **待办增删改查** |
+| `wecomcli-email` | 邮件搜索与读取（不支持发送） |
+| `wecomcli-disk` | 微盘文件 |
+| `wecomcli-media` | media_id 与本地文件搬运 |
+| `wecomcli-message` | 向机器人会话推送消息 |
+| `wecomcli-doc-manage` | 文档搜索 / 改名 / 权限（跨类型） |
+| `wecomcli-doc` | 在线文档正文读写 |
+| `wecomcli-sheet` | 在线表格 |
+| `wecomcli-smartsheet` | **智能表格**：子表 / 字段 / 记录 / 视图 / 图表 |
+| `wecomcli-smartpage` | 智能文档 |
+
+> 清单以实际跑 `npx skills add WeComTeam/wecom-cli --list` 的输出为准（2026-09 实测 14 个）。
+> 头部几个的装机量在 1.6–2.1 万区间。
 
 安装：`npx skills add wecomteam/wecom-cli`
+
+### 另外两条相邻路线
+
+- **`WecomTeam/wecom-unified`**（119★）与 **`wecom-openclaw-plugin`**（472★）——
+  官方同生态仓库，前者能力全覆盖，后者是 OpenClaw 插件
+- **`OmniSocKit/Open-Wecom-Skills`**（30★ / Apache-2.0）——**41 个 skill、550+ API**，
+  是给**开发者**用的企微开发知识体系（Python/TS/Go/Java/PHP 代码模板 + 踩坑指南），
+  也提供 MCP 接入。跟非技术用户无关，但要做深度集成时是好资料
 
 ---
 
