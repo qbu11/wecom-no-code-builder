@@ -3,6 +3,12 @@
 核实时间 2026-09，来源为企微官方帮助中心与官方渠道。
 **界面随版本变化——若发现与用户屏幕不符，以用户实际看到的为准，并当场修正你的说法。**
 
+> **遇到不确定的，查权威来源，别凭记忆：**
+> - 界面操作 → 企微帮助中心 <https://open.work.weixin.qq.com/help2/>
+> - API / 智能表格能力 → 企微开发者中心 <https://developer.work.weixin.qq.com/document/path/97392>
+> - CLI 命令用法 → <https://github.com/WecomTeam/wecom-cli/blob/main/docs/cli-reference.md>
+> - 机器人凭证怎么拿 → <https://open.work.weixin.qq.com/help2/pc/cat?doc_id=21677>
+
 ---
 
 ## 入口路径【确定】
