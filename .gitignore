@@ -1,0 +1,5 @@
+# eval 运行产物（见 skill-creator）
+*-workspace/
+__pycache__/
+*.pyc
+.DS_Store
